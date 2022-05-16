@@ -1,0 +1,31 @@
+/*
+header
+*/
+
+.site_header {
+    display: flex;
+}
+
+.mob_control .menu_open {
+    font-size: 0;
+}
+
+.mob_control .search_btn {
+    font-size: 0;
+}
+
+.header_menu {
+    display: none;
+}
+
+.header_control .search_btn {
+    font-size: 0;
+}
+
+.header_control .phone_btn {
+    font-size: 0;
+}
+
+.header_control .cart_btn {
+    font-size: 0;
+}

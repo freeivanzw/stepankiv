@@ -1,0 +1,28 @@
+@media only screen and (min-width: 480px) {
+  h3,
+.sub_title {
+    font-size: 36px;
+  }
+
+  h4,
+.item_title {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 24px;
+    height: 74px;
+    border-radius: 37px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .main_title,
+h1 {
+    font-size: 80px;
+  }
+
+  h2,
+.section_title {
+    font-size: 60px;
+  }
+}
