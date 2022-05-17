@@ -68,4 +68,9 @@ $(function () {
     $('.test_slider').slick()
 
     $('.order_delivery').dropdown()
+
+    $('.footer_hidden-wrap .footer_title').on('click', function (e) {
+        e.preventDefault();
+        $(this).next('.hidden_footer').toggleClass('active')
+    })
 })

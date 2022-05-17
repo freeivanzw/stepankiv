@@ -10,77 +10,167 @@
 </head>
 <body>
     <header class="site_header">
-        <div class="mob_control">
-            <a href="#" class="menu_open">open menu<svg class="icon"><use xlink:href="./images/sprite.svg#menu_open"></use></svg></a>
-            <a href="#" class="search_btn">search<svg class="icon"><use xlink:href="./images/sprite.svg#search"></use></svg></a>
-        </div>
-        <a href="#" class="logo_header">
-            <img src="./images/desktop_logo.jpg" alt="logo" class="mob_logo">
-            <img src="./images/mob_logo.jpg" alt="logo" class="desk_logo">
-        </a>
-        <ul class="header_menu">
-            <li><a href="#">Про мережу</a></li>
-            <li><a href="#">Продукція</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Знижки</a></li>
-            <li><a href="#">Магазини</a></li>
-            <li><a href="#">Кар'єра</a></li>
-            <li><a href="#">Контакти</a></li>
-        </ul>
-        <div class="header_control">
-            <a href="#" class="search_btn">search<svg class="icon"><use xlink:href="./images/sprite.svg#search"></use></svg></a>
-            <a href="#" class="phone_btn">phone<svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg></a>
-            <a href="#" class="cart_btn">cart<svg class="icon"><use xlink:href="./images/sprite.svg#cart"></use></svg></a>
+        <div class="centre">
+            <div class="mob_control">
+                <a href="#" class="menu_open">open menu<svg class="icon"><use xlink:href="./images/sprite.svg#menu_open"></use></svg></a>
+                <a href="#" class="search_btn">search<svg class="icon"><use xlink:href="./images/sprite.svg#search"></use></svg></a>
+            </div>
+            <a href="#" class="logo_header">
+                <img src="./images/mob_logo.jpg" alt="logo" class="mob_logo">
+                <img src="./images/desktop_logo.png" alt="logo" class="desk_logo">
+            </a>
+            <ul class="header_menu">
+                <li><a href="#">Про мережу</a></li>
+                <li><a href="#">Продукція</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Знижки</a></li>
+                <li><a href="#">Магазини</a></li>
+                <li><a href="#">Кар'єра</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+            <div class="header_control">
+                <a href="#" class="search_btn">search<svg class="icon"><use xlink:href="./images/sprite.svg#search"></use></svg></a>
+                <a href="#" class="phone_btn">phone<svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg></a>
+                <a href="#" class="cart_btn">cart<span class="counter">3</span><svg class="icon"><use xlink:href="./images/sprite.svg#cart"></use></svg></a>
+            </div>
         </div>
     </header>
-    <div class="styleguide"> 
-        <a href="#" class="btn">Нажми на мене</a>
-        <br>
-        <a href="#" class="btn dark_btn">Нажми на мене</a>
-        <br>
-        <a href="#" class="btn not_active">Нажми на мене</a>
-        <br>
-        <input type="text" placeholder="menu">
-        <br>
-        <input type="text" placeholder="menu" class="error">
-        <br>
-        <textarea placeholder="menu"></textarea>
-
-        <div class="dropdown order_delivery dropdown-open">
-            <div class="overflow">
-                <span>Спосіб доставки</span>
-                <button type="button" class="drop_arrow">open</button>
+    <main>
+        <!-- БАННЕР -->
+        <section class="main_banner">
+            <div class="banner_slide">
+                <picture>
+                    <source media="(max-width: 639px)" srcset="./images/banner_mob.png">
+                    <source media="(min-width: 640px)" srcset="./images/banner_desk.png">
+                    <img src="./images/banner_desk.png" alt="banner image">
+                </picture>
+                <div class="centre">
+                    <span class="main_title">Ексклюзивні десерти</span>
+                    <span class="banner_text">Таким чином реалізація намічених планових завдань потребує визначення та уточнення подальших напрямів розвитку.</span>
+                    <ul class="banner_services">
+                        <li>
+                            <a href="#" class="services_item">
+                                <div class="services_icon"><svg class="icon"><use xlink:href="./images/sprite.svg#cake"></use></svg></div>
+                                <span>Створіть свій десерт</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services_item">
+                                <div class="services_icon"><svg class="icon"><use xlink:href="./images/sprite.svg#cake"></use></svg></div>
+                                <span>Створіть свій десерт</span>
+                            </a>
+                        </li>
+                    </ul>                    
+                </div>
             </div>
-            <ul style="display: block;">
-                <li><a href="#">Нова Пошта</a></li>
-                <li><a href="#">Кур’єр Нова Пошта</a></li>
-                <li><a href="#">Кур’єр Міст Експрес</a></li>
-                <li><a href="#">Самовивіз</a></li>
-                <li><a href="#">Інше</a></li>
-            </ul>
+        </section>
+        <!-- <div class="styleguide" style="display: none"> -->
+        <div class="styleguide" >
+            <a href="#" class="btn">Нажми на мене</a>
+            <br>
+            <a href="#" class="btn dark_btn">Нажми на мене</a>
+            <br>
+            <a href="#" class="btn not_active">Нажми на мене</a>
+            <br>
+            <input type="text" placeholder="menu">
+            <br>
+            <input type="text" placeholder="menu" class="error">
+            <br>
+            <textarea placeholder="menu"></textarea>
+    
+            <div class="dropdown order_delivery dropdown-open">
+                <div class="overflow">
+                    <span>Спосіб доставки</span>
+                    <button type="button" class="drop_arrow">open</button>
+                </div>
+                <ul style="display: block;">
+                    <li><a href="#">Нова Пошта</a></li>
+                    <li><a href="#">Кур’єр Нова Пошта</a></li>
+                    <li><a href="#">Кур’єр Міст Експрес</a></li>
+                    <li><a href="#">Самовивіз</a></li>
+                    <li><a href="#">Інше</a></li>
+                </ul>
+            </div>
+    
+            <article>
+                <h1>Hello world</h1>
+                <h2>Hello world</h2>
+                <h3>Hello world</h3>
+                <h4>Hello world</h4>
+                <h5>Hello world</h5>
+                <ul>
+                    <li>test test list</li>
+                    <li>test test list</li>
+                    <li>test test list</li>
+                    <li>test test list</li>
+                </ul>
+                <ul>
+                    <ol>test test list</ol>
+                    <ol>test test list</ol>
+                    <ol>test test list</ol>
+                    <ol>test test list</ol>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore cumque delectus perferendis porro voluptatibus debitis doloribus, cum earum repudiandae praesentium ipsum incidunt nisi ex?</p>
+            </article>
         </div>
-
-        <article>
-            <h1>Hello world</h1>
-            <h2>Hello world</h2>
-            <h3>Hello world</h3>
-            <h4>Hello world</h4>
-            <h5>Hello world</h5>
-            <ul>
-                <li>test test list</li>
-                <li>test test list</li>
-                <li>test test list</li>
-                <li>test test list</li>
-            </ul>
-            <ul>
-                <ol>test test list</ol>
-                <ol>test test list</ol>
-                <ol>test test list</ol>
-                <ol>test test list</ol>
-            </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore cumque delectus perferendis porro voluptatibus debitis doloribus, cum earum repudiandae praesentium ipsum incidunt nisi ex?</p>
-        </article>
-    </div>
+    </main>
+    <footer class="site_footer">
+        <div class="centre">
+            <div class="footer_menu">
+                <ul>
+                    <li class="footer_hidden-wrap">
+                        <a href="#" class="footer_title">Про нас</a>
+                        <ul class="hidden_footer">
+                            <li><a href="#">Про мережу</a></li>
+                            <li><a href="#">Новини</a></li>
+                            <li><a href="#">Історія мережі</a></li>
+                            <li><a href="#">Публічна Оферта</a></li>
+                            <li><a href="#">Вакансії</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer_hidden-wrap">
+                        <a href="#" class="footer_title">Магазин</a>
+                        <ul class="hidden_footer">
+                            <li><a href="#">Продукція</a></li>
+                            <li><a href="#">Ексклюзивна продукція</a></li>
+                            <li><a href="#">Новинки</a></li>
+                            <li><a href="#">Знижки</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer_contacts">
+                    <div class="footer_title">Контакти</div>
+                    <ul class="contacts_list">
+                        <li><a href="tel:380676761000">+38 067 676 1000</a></li>
+                        <li><a href="mailto:info@stepankiv.com">info@stepankiv.com</a></li>
+                    </ul>
+                    <ul class="locations_list">
+                        <li><a href="#">вул. Назва вулиці. 123</a></li>
+                        <li><a href="#">вул. Назва вулиці. 123</a></li>
+                    </ul>
+                    <ul class="social_list">
+                        <li><a href="#">facebook<svg class="icon"><use xlink:href="./images/sprite.svg#facebook"></use></svg></a></li>
+                        <li><a href="#">linkedin<svg class="icon"><use xlink:href="./images/sprite.svg#linkedin"></use></svg></a></li>
+                        <li><a href="#">twitter<svg class="icon"><use xlink:href="./images/sprite.svg#twitter"></use></svg></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_subscribe">
+                <a href="#" class="footer_logo"><img src="./images/mob_logo.jpg" alt="mob logo"></a>
+                <div class="footer_title">Підпишіться на новинки</div>
+                <span class="footer_subscribe-text">Отримуйте найсвіжішу інформацію про наші новинки</span>
+                <form>
+                    <svg class="icon input_icon"><use xlink:href="./images/sprite.svg#mail"></use></svg>
+                    <input type="email" placeholder="Email">
+                    <button type="submit">submit<svg class="icon"><use xlink:href="./images/sprite.svg#paper_plane"></use></svg></button>
+                </form>
+            </div>
+            <div class="privacy_policy">
+                <span class="copyright">Copyright © 1998 - 2021 «Степанків» - кондитерська з душею!</span>
+                <a href="#" class="privacy_policy-text">Політика кофіденційності</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/plugins/slick.min.js"></script>
