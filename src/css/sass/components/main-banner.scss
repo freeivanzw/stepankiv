@@ -2,6 +2,16 @@
 
 }
 
+.main_banner:not(.slick-initialized) {
+    display: flex;
+    overflow: hidden;
+}
+
+.main_banner:not(.slick-initialized) .banner_slide {
+    width: 100%;
+    flex: 0 0 100%;
+}
+
 .banner_slide {
     display: flex;
     align-items: center;
@@ -28,6 +38,8 @@
     display: flex;
     flex-direction: column;
     z-index: 1;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
 .banner_slide .main_title {
@@ -42,6 +54,49 @@
 .banner_services {
     display: flex;
     flex-direction: column;
+
+    li + li {
+        margin-top: 25px;
+    }
+
+    li:nth-child(odd) {
+        .services_icon {
+            background-color: var(--main-color);
+
+            .icon {
+                fill: #fff;
+            }
+        }
+    }
+
+    a {
+        font-family: 'Playfair-Display';
+        text-decoration: none;
+        font-size: 20px;
+        max-width: max-content;
+    }
+
+    span {
+        padding-bottom: 10px;
+        padding-right: 22px;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 100%;
+            max-width: 140px;
+            height: 2px;
+            background-color: var(--main-color);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transition: 0.6s;
+        }
+    }
+
+    a:hover span::before {
+        width: 0;
+    }
 }
 
 .services_item {
@@ -62,5 +117,33 @@
     .icon {
         width: 32px;
         height: 32px;
+    }
+}
+
+.main_banner .slick-dots {
+    display: flex;
+    position: absolute;
+    bottom: 75px;
+    left: 10px;
+
+    li {
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+    }
+
+    button {
+        font-size: 0;
+        border: none;
+        padding: 0;
+        width: 30px;
+        height: 4px;
+        background-color: #fff;
+        transition: 0.3s;
+        border-radius: 2px;
+    }
+
+    li.slick-active button {
+        background-color: var(--main-color);
     }
 }

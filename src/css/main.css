@@ -218,9 +218,6 @@ select {
 .slick-slide.dragging img {
   pointer-events: none;
 }
-.slick-initialized .slick-slide {
-  display: block;
-}
 .slick-loading .slick-slide {
   visibility: hidden;
 }
@@ -1026,6 +1023,16 @@ header
   font-size: 12px;
 }
 
+.main_banner:not(.slick-initialized) {
+  display: flex;
+  overflow: hidden;
+}
+
+.main_banner:not(.slick-initialized) .banner_slide {
+  width: 100%;
+  flex: 0 0 100%;
+}
+
 .banner_slide {
   display: flex;
   align-items: center;
@@ -1050,6 +1057,8 @@ header
   display: flex;
   flex-direction: column;
   z-index: 1;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .banner_slide .main_title {
@@ -1064,6 +1073,40 @@ header
 .banner_services {
   display: flex;
   flex-direction: column;
+}
+.banner_services li + li {
+  margin-top: 25px;
+}
+.banner_services li:nth-child(odd) .services_icon {
+  background-color: var(--main-color);
+}
+.banner_services li:nth-child(odd) .services_icon .icon {
+  fill: #fff;
+}
+.banner_services a {
+  font-family: "Playfair-Display";
+  text-decoration: none;
+  font-size: 20px;
+  max-width: max-content;
+}
+.banner_services span {
+  padding-bottom: 10px;
+  padding-right: 22px;
+  position: relative;
+}
+.banner_services span::before {
+  content: "";
+  width: 100%;
+  max-width: 140px;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: 0.6s;
+}
+.banner_services a:hover span::before {
+  width: 0;
 }
 
 .services_item {
@@ -1084,4 +1127,29 @@ header
 .services_icon .icon {
   width: 32px;
   height: 32px;
+}
+
+.main_banner .slick-dots {
+  display: flex;
+  position: absolute;
+  bottom: 75px;
+  left: 10px;
+}
+.main_banner .slick-dots li {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.main_banner .slick-dots button {
+  font-size: 0;
+  border: none;
+  padding: 0;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+.main_banner .slick-dots li.slick-active button {
+  background-color: var(--main-color);
 }
