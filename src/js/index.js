@@ -73,14 +73,20 @@ $(function () {
         e.preventDefault();
         $(this).next('.hidden_footer').toggleClass('active')
     })
+    
+    $('.main_banner').each(function(index, element) {
+        if ($(element).find('.banner_slide').length > 1) {
+            $(element).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+            });
+        }
+    })
 
-    $('.main_banner').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: false,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 4000,
-    });
+   
 })
