@@ -1039,21 +1039,28 @@ header
   justify-content: center;
   position: relative;
 }
+.banner_slide picture {
+  width: 100%;
+}
 .banner_slide picture img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .banner_slide .centre {
   display: flex;
   flex-direction: column;
   z-index: 1;
-  padding-top: 80px;
   padding-bottom: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.banner_slide .centre > * {
+  width: 80%;
 }
 
 .banner_slide .main_title {
@@ -1127,7 +1134,7 @@ header
 .main_banner .slick-dots {
   display: flex;
   position: absolute;
-  bottom: 75px;
+  bottom: 35px;
   left: 10px;
 }
 .main_banner .slick-dots li {

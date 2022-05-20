@@ -19,11 +19,12 @@
     position: relative;
 
     picture {
-       
+        width: 100%;
 
         img {
             width: 100%;
             height: auto;
+            object-fit: cover;
         }
     }
 }
@@ -32,12 +33,15 @@
     display: flex;
     flex-direction: column;
     z-index: 1;
-    padding-top: 80px;
     padding-bottom: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.banner_slide .centre > * {
+    width: 80%;
 }
 
 .banner_slide .main_title {
@@ -121,7 +125,7 @@
 .main_banner .slick-dots {
     display: flex;
     position: absolute;
-    bottom: 75px;
+    bottom: 35px;
     left: 10px;
 
     li {

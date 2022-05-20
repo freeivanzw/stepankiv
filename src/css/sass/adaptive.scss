@@ -195,6 +195,14 @@
         }
     }
 
+    .banner_slide .main_title {
+        font-size: 50px;
+    }
+
+    .banner_slide .centre > * {
+        width: 50%;
+    }
+
 }
 
 @media only screen and (min-width : 1024px) {
@@ -233,6 +241,26 @@
     .footer_menu .hidden_footer {
         display: flex;
     }
+
+    .banner_services {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .banner_services li + li {
+        margin-top: 0;
+    }
+
+    .banner_services li {
+        width: calc(50% - 10px);
+    }
+
+    .services_icon {
+        flex: 0 0 65px;
+        width: 65px;
+        height: 65px;
+    }
 }
 
 @media only screen and (min-width : 1280px) {
@@ -256,6 +284,10 @@
     .header_control .search_btn,
     .header_control .phone_btn {
         margin-right: 25px;
+    }
+
+    .banner_slide .main_title {
+        font-size: 80px;
     }
 }
 
