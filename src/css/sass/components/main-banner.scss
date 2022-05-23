@@ -1,6 +1,6 @@
-.main_banner {
-
-}
+/* 
+БАННЕР
+*/
 
 .main_banner:not(.slick-initialized) {
     display: flex;
@@ -126,7 +126,7 @@
     display: flex;
     position: absolute;
     bottom: 35px;
-    left: 10px;
+    left: 0;
 
     li {
         display: flex;

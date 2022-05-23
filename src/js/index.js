@@ -88,5 +88,23 @@ $(function () {
         }
     })
 
+    $('.products_slider-inner').slick({
+        // slidesToShow: 1,
+        // centerPadding: '70px',
+        centerMode: true,
+        dots: false,
+        arrows: true,
+        mobileFirst: true,
+        variableWidth: true,
+        adaptiveHeight: false,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    // slidesToShow: 3
+                }
+            }
+          ]
+    });
    
 })

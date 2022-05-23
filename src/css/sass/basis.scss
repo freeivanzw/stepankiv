@@ -229,6 +229,17 @@ h4,
     }
 }
 
+.btn .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 13px;
+    transition: 0.3s;
+}
+
+.btn:hover .icon {
+    fill: var(--btn-text-hover);
+}
+
 .hidden {
 	display: none !important;
 }
