@@ -2,7 +2,7 @@
 ВІТРИНА СЛАЙДЕР
 */
 .products_slider {
-    padding: 75px 0 65px 0;
+    padding: 75px 0 35px 0;
     background-color: var(--sub-main-color);
     position: relative;
 }
@@ -59,7 +59,17 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
+    transition: 0.3s;
     cursor: pointer;
+
+    &:hover {
+        background-color: var(--main-color);
+
+        &::before,
+        &::after {
+            background-color: #fff;
+        }
+    }
 
     &.slick-prev {
         left: 10px;
@@ -80,6 +90,7 @@
         left: 50%;
         top: 50%;
         transform-origin: left;
+        transition: 0.3s;
     }
 
     &::after {
@@ -97,7 +108,7 @@
     align-items: center;
     flex-direction: column;
     padding: 0 10px;
-    width: 240px;
+    width: 220px;
 }
 
 .products_image {
@@ -158,6 +169,12 @@
     font-weight: 500;
     text-align: center;
     margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.products_slider-link:hover,
+.products_image:hover + figcaption .products_slider-link {
+    opacity: 0.5;
 }
 
 .products_slider-weight {

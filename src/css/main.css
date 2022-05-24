@@ -350,7 +350,7 @@ a:active {
 h1 {
   text-decoration: none;
   font-family: "Playfair-Display";
-  font-size: 11.111vw;
+  font-size: 40px;
   line-height: 1.2;
   color: var(--text-main-color);
   transition: 0.3s;
@@ -363,7 +363,7 @@ a.main_title:hover {
 h2,
 .section_title {
   font-family: "Playfair-Display";
-  font-size: 10vw;
+  font-size: 36px;
   text-decoration: none;
   line-height: 1.2;
   color: var(--text-main-color);
@@ -377,7 +377,7 @@ a.section_title:hover {
 h3,
 .sub_title {
   font-family: "Playfair-Display";
-  font-size: 8.333vw;
+  font-size: 30px;
   line-height: 1.2;
   color: var(--text-main-color);
 }
@@ -385,8 +385,8 @@ h3,
 h4,
 .item_title {
   font-family: "Playfair-Display";
+  font-size: 18px;
   line-height: 1.2;
-  font-size: 3.889vw;
   color: var(--text-main-color);
 }
 
@@ -415,8 +415,10 @@ h4,
 }
 
 .btn {
+  font-family: "Playfair-Display";
   font-size: 5vw;
   line-height: 1.2;
+  letter-spacing: 1px;
   text-decoration: none;
   color: var(--btn-text);
   display: flex;
@@ -1105,6 +1107,8 @@ header
   font-family: "Playfair-Display";
   text-decoration: none;
   font-size: 20px;
+  display: flex;
+  align-items: flex-start;
   max-width: max-content;
 }
 .banner_services span {
@@ -1151,12 +1155,12 @@ header
   display: flex;
   position: absolute;
   bottom: 35px;
-  left: 0;
+  left: 10px;
 }
 .main_banner .slick-dots li {
   display: flex;
   align-items: center;
-  margin: 0 10px;
+  margin: 0 6px;
 }
 .main_banner .slick-dots button {
   font-size: 0;
@@ -1185,6 +1189,7 @@ header
   top: 0;
   left: 0;
   width: 100%;
+  z-index: -1;
 }
 .catalog_prev-bg picture {
   width: 100%;
@@ -1201,7 +1206,7 @@ header
   align-items: center;
 }
 
-.catalog_prev .main_title {
+.catalog_prev .section_title {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -1209,8 +1214,8 @@ header
 .catalog_prev-text {
   font-family: "Proxima-Nova";
   font-weight: 300;
+  line-height: 1.4;
   text-align: center;
-  font-size: 16px;
   display: block;
   margin-bottom: 50px;
 }
@@ -1226,14 +1231,14 @@ header
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .catalog_prev-img {
   display: block;
   width: 145px;
   height: 145px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   position: relative;
 }
 .catalog_prev-img::after {
@@ -1270,7 +1275,7 @@ header
 .catalog_prev-item figcaption a::after {
   content: "";
   width: 26px;
-  height: 2px;
+  height: 3px;
   background-color: var(--border-color);
   position: absolute;
   bottom: 0;
@@ -1278,7 +1283,9 @@ header
   transform: translateX(-50%);
   transition: 0.3s;
 }
-.catalog_prev-item figcaption a:hover::after {
+
+.catalog_prev-item figcaption a:hover::after,
+.catalog_prev-img:hover + figcaption a::after {
   width: 100%;
   background-color: var(--main-color);
 }
@@ -1287,7 +1294,7 @@ header
 ВІТРИНА СЛАЙДЕР
 */
 .products_slider {
-  padding: 75px 0 65px 0;
+  padding: 75px 0 35px 0;
   background-color: var(--sub-main-color);
   position: relative;
 }
@@ -1342,7 +1349,14 @@ header
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
+  transition: 0.3s;
   cursor: pointer;
+}
+.products_slider .slick-arrow:hover {
+  background-color: var(--main-color);
+}
+.products_slider .slick-arrow:hover::before, .products_slider .slick-arrow:hover::after {
+  background-color: #fff;
 }
 .products_slider .slick-arrow.slick-prev {
   left: 10px;
@@ -1360,6 +1374,7 @@ header
   left: 50%;
   top: 50%;
   transform-origin: left;
+  transition: 0.3s;
 }
 .products_slider .slick-arrow::after {
   transform: translate(-50%, -50%) rotate(-45deg);
@@ -1373,7 +1388,7 @@ header
   align-items: center;
   flex-direction: column;
   padding: 0 10px;
-  width: 240px;
+  width: 220px;
 }
 
 .products_image {
@@ -1431,6 +1446,12 @@ header
   font-weight: 500;
   text-align: center;
   margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.products_slider-link:hover,
+.products_image:hover + figcaption .products_slider-link {
+  opacity: 0.5;
 }
 
 .products_slider-weight {
@@ -1441,7 +1462,7 @@ header
 ПЕРЕВАГИ
 */
 .preference {
-  padding: 120px 0 65px 0;
+  padding: 150px 0 65px 0;
 }
 
 .preference .centre {
@@ -1459,13 +1480,14 @@ header
 }
 
 .preference_info {
-  line-height: 1.4;
+  line-height: 1.8;
 }
 
 .preference ul {
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
+  line-height: 1.8;
 }
 .preference ul li {
   font-size: 14px;

@@ -1,4 +1,20 @@
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 640px) {
+  .catalog_prev-img {
+    width: 230px;
+    height: 230px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main_title,
+h1 {
+    font-size: 80px;
+  }
+
+  h2,
+.section_title {
+    font-size: 60px;
+  }
+
   h3,
 .sub_title {
     font-size: 36px;
@@ -20,24 +36,7 @@
     height: 40px;
     margin-right: 13px;
   }
-}
-@media only screen and (min-width: 640px) {
-  .main_title,
-h1 {
-    font-size: 80px;
-  }
 
-  h2,
-.section_title {
-    font-size: 60px;
-  }
-
-  .catalog_prev-img {
-    width: 230px;
-    height: 230px;
-  }
-}
-@media only screen and (min-width: 768px) {
   .site_header .center {
     position: relative;
   }
@@ -197,6 +196,14 @@ h1 {
     width: 50%;
   }
 
+  .banner_text {
+    font-size: 22px;
+  }
+
+  .banner_services a {
+    font-size: 24px;
+  }
+
   .catalog_prev-item {
     width: 33.333%;
   }
@@ -279,13 +286,8 @@ h1 {
     padding-bottom: 100px;
   }
 
-  .catalog_prev .main_title {
+  .catalog_prev .section_title {
     margin-bottom: 30px;
-  }
-
-  .catalog_prev-text {
-    font-size: 18px;
-    margin-bottom: 100px;
   }
 
   .products_slider-inner {
@@ -306,17 +308,43 @@ h1 {
     height: 275px;
   }
 
+  .catalog_prev-item {
+    margin-bottom: 65px;
+  }
+
+  .catalog_prev-text {
+    font-size: 18px;
+    margin-bottom: 100px;
+    max-width: 800px;
+  }
+
+  .catalog_prev-img {
+    margin-bottom: 55px;
+  }
+
+  .catalog_prev-item figcaption a {
+    font-size: 22px;
+  }
+
+  .catalog_prev-grid {
+    margin-bottom: 75px;
+  }
+
   .preference .centre {
     flex-direction: row;
   }
 
   .preference_text {
-    width: 50%;
+    width: 55%;
     margin-bottom: 0;
   }
 
+  .preference_text .section_title {
+    margin-bottom: 35px;
+  }
+
   .preference ul {
-    width: 50%;
+    width: 45%;
     padding-left: 110px;
   }
   .preference ul li {
@@ -453,7 +481,7 @@ h1 {
   }
 
   .products_slider-inner figure {
-    width: 450px;
+    width: 490px;
   }
 
   .products_image {

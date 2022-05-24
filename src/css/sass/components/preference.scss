@@ -2,7 +2,7 @@
 ПЕРЕВАГИ
 */
 .preference {
-    padding: 120px 0 65px 0;
+    padding: 150px 0 65px 0;
 }
 
 .preference .centre {
@@ -21,13 +21,14 @@
 }
 
 .preference_info {
-    line-height: 1.4;   
+    line-height: 1.8;   
 }
 
 .preference ul {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
+    line-height: 1.8;
 
     li {
         font-size: 14px;
