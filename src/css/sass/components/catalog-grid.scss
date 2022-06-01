@@ -1,0 +1,230 @@
+/* КАТАЛОГ */
+
+.catalog_grid {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.catalog_grid .centre {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog_grid .section_title {
+    margin-bottom: 34px;
+    width: 100%;
+    text-align: center;
+}
+
+.catalog_grid aside {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 38px;
+}
+
+.pdf_btn {
+    font-family: "Proxima-Nova";
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 12px;
+    max-width: max-content;
+    min-height: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+
+    .icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.catalog_grid aside ul {
+    display: flex;
+    max-width: 100%;
+    overflow-x: auto;
+
+    li {
+        margin: 0 12px;
+        padding: 12px 0;
+    }
+
+    a {
+        font-family: 'Proxima-Nova';
+        font-weight: 300;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 3px 15px;
+        border-radius: 12px;
+        position: relative;
+        
+        &.active {
+            background-color: var(--accent-color);
+
+            &::before {
+                content: "";
+                width: calc(100% + 8px);
+                height: calc(100% + 8px);
+                border: 1px solid var(--main-color);
+                border-radius: 12px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+            }
+    
+            &::after {
+                content: "";
+                width: calc(100% + 12px);
+                height: calc(100% + 8px);
+                border: 1px solid var(--main-color);
+                border-radius: 12px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(4deg);
+                z-index: -1;
+            }
+        }
+        
+    }
+
+    img {
+        display: block;
+        margin-right: 10px;
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+    }
+}
+
+.products_grid {
+
+    width: 100%;
+    
+    ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    li {
+        margin-bottom: 65px;
+        width: calc(50% - 15px);
+
+        &:nth-child(even) {
+            margin-left: 30px;
+        }
+    }
+}
+
+.products_photo {
+    display: block;
+    margin: 0 auto;
+    width: 125px;
+    height: 125px;
+    margin-bottom: 22px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.products_grid figcaption {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products_grid .categories {
+    font-family: 'Proxima-Nova';
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    color: var(--text-light);
+    display: block;
+    width: 100%;
+}
+
+.product_link {
+    font-family: 'Playfair-Display';
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--link-color);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.price_wrap {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40px);
+}
+
+.product_price {
+    font-family: 'Proxima-Nova';
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--main-color);
+    padding-right: 15px;
+}
+
+.weight_list {
+    font-family: 'Proxima-Nova';
+    font-size: 10px;
+    line-height: 1.4;
+    color: var(--text-light);
+    display: flex;
+    flex-wrap: wrap;
+
+    & > * {
+        margin-right: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--text-light);
+        border-bottom: 1px solid transparent;
+        transition: 0.3s;
+
+        &:hover {
+            color: var(--link-color);
+        }
+
+        &.active {
+            color: var(--link-color);
+            border-color: var(--link-color);
+        }
+    }
+}
+
+.product_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: var(--main-color);
+
+    .icon {
+        fill: transparent;
+        stroke: var(--icon-color-contrast);
+    }
+}
+
+.show_more-products {
+    max-width: max-content;
+    margin: 0 auto;
+}
