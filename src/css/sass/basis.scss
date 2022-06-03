@@ -219,6 +219,10 @@ h4,
         color: var(--btn-text-dark-hover);
         border-color: var(--btn-border-dark-hover);
         background-color: var(--btn-bg-dark-hover);
+
+        .icon {
+            fill: var(--icon-color)
+        }
     }
 
     .icon {
@@ -545,3 +549,46 @@ h4,
     color: #000;
 }
 
+.clickpath {
+    padding-top: 40px;
+}
+
+.clickpath .centre {
+    display: flex;
+    overflow-x: auto;
+}
+
+.clickpath LI > A,
+.clickpath LI > Span {
+    font-size: 14px;
+    font-family: "Proxima-Nova";
+    white-space: nowrap;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.clickpath LI > A:hover {
+    text-decoration: underline;
+}
+
+.clickpath LI > Span {
+    opacity: 0.5;
+}
+
+.clickpath LI + LI {
+    padding-left: 8px;
+    margin-left: 4px;
+    position: relative;
+}
+
+.clickpath LI + LI::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: rotateY(-50%);
+}

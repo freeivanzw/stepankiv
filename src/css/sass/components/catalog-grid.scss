@@ -60,37 +60,45 @@
         text-decoration: none;
         display: flex;
         align-items: center;
-        padding: 3px 15px;
+        padding: 2px 12px;
         border-radius: 12px;
         position: relative;
-        
+        transition: 0.3s;
+
+        &:hover {
+            background-color: var(--accent-color);
+        }
+
         &.active {
             background-color: var(--accent-color);
+            cursor: unset;
 
             &::before {
                 content: "";
                 width: calc(100% + 8px);
                 height: calc(100% + 8px);
                 border: 1px solid var(--main-color);
-                border-radius: 12px;
+                border-radius: 15px;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 z-index: -1;
+                opacity: 0.7;
             }
     
             &::after {
                 content: "";
-                width: calc(100% + 12px);
+                width: calc(100% + 15px);
                 height: calc(100% + 8px);
                 border: 1px solid var(--main-color);
-                border-radius: 12px;
+                border-radius: 15px;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%) rotate(4deg);
                 z-index: -1;
+                opacity: 0.7;
             }
         }
         
@@ -127,10 +135,9 @@
 
 .products_photo {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 12px auto;
     width: 125px;
     height: 125px;
-    margin-bottom: 22px;
 
     img {
         width: 100%;
@@ -161,8 +168,26 @@
     color: var(--link-color);
     text-decoration: none;
     display: block;
-    margin-bottom: 15px;
+    max-width: max-content;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
     width: 100%;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 0%;
+        height: 1px;
+        background-color: var(--link-color);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
 }
 
 .price_wrap {
@@ -177,6 +202,7 @@
     line-height: 1.2;
     font-weight: 700;
     color: var(--main-color);
+    margin-bottom: 2px;
     padding-right: 15px;
 }
 
@@ -217,10 +243,21 @@
     height: 30px;
     border-radius: 15px;
     background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    transition: 0.3s;
 
     .icon {
         fill: transparent;
         stroke: var(--icon-color-contrast);
+        transition: 0.3s;
+    }
+
+    &:hover {
+        background-color: transparent;
+
+        .icon {
+            stroke: var(--icon-color);
+        }
     }
 }
 
