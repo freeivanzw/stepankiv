@@ -1,0 +1,226 @@
+.catalog_details {
+    padding: 40px 0 80px 0;
+}
+
+.catalog_details .centre {
+    max-width: 1286px;
+}
+
+.product_header-mob {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+.product_header-mob .section_title {
+    margin-bottom: 15px;
+}
+
+.product_article {
+    font-family: 'Proxima-Nova', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.minimal_order {
+    font-family: 'Proxima-Nova', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+}
+
+.minimal_order Svg.icon {
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+}
+
+.product_photo-slider {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.product_photo-slider:not(.slick-initialized) {
+    display: flex;
+    overflow: hidden;
+}
+
+.product_photo-slider:not(.slick-initialized) .product_photo-one {
+    flex: 0 0 100%;
+}
+
+.product_photo-slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+.product_photo-slider .slick-prev.slick-arrow {
+    left: 0;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.product_photo-slider .slick-next.slick-arrow {
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.product_photo-one Img {
+    width: 100%;
+    height: 100%;
+}
+
+.product_header-desk {
+    display: none;
+}
+
+.product_control {
+    margin-bottom: 15px;
+    padding: 25px 20px 30px 20px;
+    background-color: #f6f4ef;
+    border-radius: 5px;
+}
+
+.product_control .left_col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.product_control I {
+    font-family: 'Proxima-Nova', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    font-style: normal;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.product_control B {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+}
+
+.product_control .weight_list {
+    font-size: 16px;
+}
+
+.product_control .weight_list > * {
+    margin-right: 22px;
+}
+
+.buy_btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--btn-text-dark);
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: max-content;
+    min-height: 48px;
+    padding: 10px 42px;
+    background-color: var(--btn-bg-dark);
+    border-radius: 24px;
+    transition: 0.3s;
+}
+
+.buy_btn .icon {
+    fill: transparent;
+    stroke: var(--btn-text-dark);
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.product_banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    margin-bottom: 34px;
+    padding: 14px;
+    border-radius: 5px;
+}
+
+.product_banner Span {
+    font-family: 'Proxima-Nova', sans-serif;
+    text-transform: uppercase;
+    color: var(--text-contrast);
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.product_description {
+    font-family: 'Proxima-Nova', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+}
+
+.product_description > * {
+    margin-bottom: 30px;
+}
+
+.product_description Ul Li {
+    font-size: 16px;
+    padding-left: 22px;
+    position: relative;
+}
+
+.product_description Ul Li::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.characteristic {
+    width: 100%;
+}
+
+.characteristic Table {
+    width: 100%;
+}
+
+.characteristic Tr {
+    font-size: 14px;
+    display: flex;
+}
+
+.characteristic Td {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    min-height: 56px;
+    width: 50%;
+    margin-top: -1px;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.characteristic Td Img {
+    display: block;
+    flex: 0 0 32px;
+    margin-right: 15px;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}

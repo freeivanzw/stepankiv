@@ -106,5 +106,62 @@ $(function () {
             }
           ]
     });
+
+    if ($('.product_photo-slider').children('.product_photo-one').length > 1) {
+        $('.product_photo-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true,
+            infinite: true,
+            autoplay: false,
+        });
+    }
+
+    $('.recommend_buy-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 639,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: true,
+                }
+            },
+            {
+                breakpoint: 1279,
+                settings: {
+                    slidesToShow: 4,
+                    arrows: true,
+                    dots: false,
+                }
+            }
+        ]
+    })
+
+    $('.seen_goods-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 639,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: true,
+                    dots: false,
+                }
+            }
+        ]
+
+    })
    
 })

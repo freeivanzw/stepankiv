@@ -1,11 +1,25 @@
 .service_grid {
     padding: 70px 0 75px 0;
     background-color: var(--sub-main-color);
+    position: relative;
+}
 
-    .centre {
-        display: flex;
-        flex-direction: column;
-    }
+.service_grid .bg-top {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: -1;
+}
+
+.service_grid .bg-top Img {
+    width: 100%;
+}
+
+.service_grid .centre {
+    display: flex;
+    flex-direction: column;
 }
 
 .service_item {

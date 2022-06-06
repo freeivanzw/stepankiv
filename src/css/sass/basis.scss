@@ -592,3 +592,214 @@ h4,
     top: 50%;
     transform: rotateY(-50%);
 }
+
+.slick-arrow {
+    font-size: 0;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    padding: 0;
+    border: 1px solid #a97b3f;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.3s;
+}
+
+.slick-arrow:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.slick-arrow::before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.slick-arrow:hover::before {
+    background-color: #fff;
+}
+
+.slick-arrow::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid var(--main-color);
+    border-right: 2px solid var(--main-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    box-sizing: content-box;
+    transition: 0.3s;
+}
+
+.slick-arrow:hover::after {
+    border-color: #ffffff;
+}
+
+.slick-prev.slick-arrow {
+    transform: rotate(180deg);
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.slick-dots button {
+    font-size: 0;
+    border: none;
+    width: 30px;
+    height: 4px;
+    padding: 0;
+    background-color: #cccccc;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.slick-dots li {
+    display: flex;
+    margin: 0 5px;
+}
+
+.slick-dots li.slick-active button {
+    background-color: var(--main-color);
+}
+
+
+.products_grid figcaption,
+figcaption.item_bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products_grid .categories,
+figcaption.item_bottom .categories{
+    font-family: 'Proxima-Nova';
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    color: var(--text-light);
+    display: block;
+    width: 100%;
+}
+
+.product_link {
+    font-family: 'Playfair-Display';
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--link-color);
+    text-decoration: none;
+    display: block;
+    max-width: max-content;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 0%;
+        height: 1px;
+        background-color: var(--link-color);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.weight_opt {
+    font-family: "Proxima-Nova";
+    color: var(--text-light);
+    margin-top: -20px;
+    width: 100%;
+}
+
+.price_wrap {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40px);
+    padding-right: 15px;
+}
+
+.product_price {
+    font-family: 'Proxima-Nova';
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 2px;
+}
+
+.weight_list {
+    font-family: 'Proxima-Nova';
+    font-size: 10px;
+    line-height: 1.4;
+    color: var(--text-light);
+    display: flex;
+    flex-wrap: wrap;
+
+    & > * {
+        margin-right: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--text-light);
+        border-bottom: 1px solid transparent;
+        transition: 0.3s;
+
+        &:hover {
+            color: var(--link-color);
+        }
+
+        &.active {
+            color: var(--link-color);
+            border-color: var(--link-color);
+
+            &:hover {
+                cursor: unset;
+            }
+        }
+    }
+}
+
+.product_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    transition: 0.3s;
+
+    .icon {
+        fill: transparent;
+        stroke: var(--icon-color-contrast);
+        transition: 0.3s;
+    }
+
+    &:hover {
+        background-color: transparent;
+
+        .icon {
+            stroke: var(--icon-color);
+        }
+    }
+}
