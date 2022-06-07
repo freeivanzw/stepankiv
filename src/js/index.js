@@ -73,6 +73,10 @@ $(function () {
         e.preventDefault();
         $(this).next('.hidden_footer').toggleClass('active')
     })
+
+    $('.shadow').on('click', function () {
+        $(this).addClass('hidden');
+    })
     
     $('.main_banner').each(function(index, element) {
         if ($(element).find('.banner_slide').length > 1) {
@@ -161,7 +165,23 @@ $(function () {
                 }
             }
         ]
+    })
 
+    $('.cart_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        infinite: true,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 639,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
     })
    
 })
