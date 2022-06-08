@@ -65,9 +65,12 @@
     &:hover {
         background-color: var(--main-color);
 
-        &::before,
-        &::after {
+        &::before {
             background-color: #fff;
+        }
+
+        &::after {
+            border-color: #fff;
         }
     }
 
@@ -83,26 +86,19 @@
     &::after,
     &::before {
         content: "";
-        width: 8px;
-        height: 1px;
         background-color: var(--main-color);
         position: absolute;
         left: 50%;
         top: 50%;
-        transform-origin: left;
         transition: 0.3s;
     }
 
     &::after {
-        transform: translate(-50%, -50%) rotate(-45deg);
-    }
-
-    &::before {
-        transform: translate(-50%, -50%) rotate(45deg);
+        transform: translate(-50%, -50%) rotate(135deg);
+        background-color: transparent;
     }
 }
-
-
+s
 .products_slider-inner figure {
     display: flex;
     align-items: center;
