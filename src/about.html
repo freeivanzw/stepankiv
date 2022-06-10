@@ -54,7 +54,7 @@
             </li>
         </ul>
     </div>
-    <!--ІСТОРІЇ-->
+    <!--СТАТТЯ 2-->
     <section class="articles">
         <div class="centre">
             <ul class="articles_list">
@@ -63,8 +63,10 @@
                 <li><a href="#">Ексклюзивна продукція</a></li>
                 <li><a href="#">Галерея</a></li>
             </ul>
-            <span class="section_title">Мережа фірмових магазинів ТМ «Степанків»</span>
-            <span class="articles_text">Повсякденна практика показує, що постійне інформаційно-пропагандистське забезпечення нашої діяльності значною мірою зумовлює створення позицій, які займають учасники щодо поставлених завдань. Різноманітний та багатий досвід подальшого розвитку різних форм діяльності потребують визначення та уточнення подальших напрямків розвитку.</span>
+            <article class="articles_first">
+                <h2>Мережа фірмових магазинів ТМ «Степанків»</h2>
+                <p class="articles_text">Повсякденна практика показує, що постійне інформаційно-пропагандистське забезпечення нашої діяльності значною мірою зумовлює створення позицій, які займають учасники щодо поставлених завдань. Різноманітний та багатий досвід подальшого розвитку різних форм діяльності потребують визначення та уточнення подальших напрямків розвитку.</p>
+            </article>
             <ul class="articles_grid">
                 <li class="articles_item">
                     <block class="articles_photo"><img src="./images/cake-2.svg" width="125" height="125" alt="service photo"></block>
@@ -82,11 +84,89 @@
                     <span class="articles_bottom">Різноманітний та багатий досвід подальшого розвитку різних форм діяльності потребують визначення та уточнення</span>
                 </li>
             </ul>
+            <picture class="articles_banner">
+                <source media="(max-width: 767px)" srcset="./images/articles-mob.webp">
+                <source media="(min-width: 768px)" srcset="./images/articles.webp">
+                <img src="./images/articles.webp" alt="images">
+            </picture>
+            <article class="article_two">
+                <header>
+                    <h2>Так само реалізація намічених планових завдань </h2>
+                    <p>Повсякденна практика показує, що постійне інформаційно-пропагандистське забезпечення нашої діяльності значною мірою зумовлює створення позицій, які займають учасники щодо поставлених завдань. </p>
+                </header>
+                <div class="article_row right_image">
+                    <div class="article_text">
+                        <p>Таким чином, початок повсякденної роботи з формування позиції вимагають від нас аналізу форм розвитку. З іншого боку, консультація з широким активом забезпечує широкому колу (фахівців) участь у формуванні нових пропозицій.</p>
+                        <b>Різноманітний та багатий досвід подальшого розвитку різних форм діяльності потребують визначення та уточнення подальших напрямків розвитку.</b>
+                    </div>
+                    <div class="articles_picture">
+                        <img src="./images/article-1.webp" class="articles_picture" alt="article images">
+                    </div>
+                </div>
+                <div class="article_row left_image">
+                    <div class="article_text">
+                        <p>Таким чином, початок повсякденної роботи з формування позиції вимагають від нас аналізу форм розвитку. З іншого боку, консультація з широким активом забезпечує широкому колу (фахівців) участь у формуванні нових пропозицій.</p>
+                        <b>Різноманітний та багатий досвід подальшого розвитку різних форм діяльності потребують визначення та уточнення подальших напрямків розвитку.</b>
+                    </div>
+                    <div class="articles_picture">
+                        <img src="./images/article-2.webp" class="articles_picture" alt="article images">
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!--ДОСЯГНЕННЯ-->
+    <section class="progress">
+        <picture class="progress_bt-top">
+          <source media="(max-width: 639px)" srcset="./images/progress_bt-top-mob.webp">
+          <source media="(min-width: 640px)" srcset="./images/progress_bt-top.webp">
+          <img src="./images/progress_bt-top.webp" alt="image">
+        </picture>
+        <div class="centre">
+            <span class="section_title">Наші досягнення</span>
+            <div class="progress_list">
+                <div class="progress_item">
+                    <b>22</b>
+                    <span>роки на ринку</span>
+                </div>
+                <div class="progress_item">
+                    <b>100+</b>
+                    <span>найменувань продукції</span>
+                </div>
+                <div class="progress_item">
+                    <b>10</b>
+                    <span>магазинів в Україні</span>
+                </div>
+            </div>
+        </div>
+        <picture class="progress_bt-bottom">
+          <source media="(max-width: 639px)" srcset="./images/progress_bt-bottom-mob.webp">
+          <source media="(min-width: 640px)" srcset="./images/progress_bt-bottom.webp">
+          <img src="./images/progress_bt-bottom.webp" alt="image">
+        </picture>
+    </section>
+    <!-- ВИБЕРІТЬ ПОСЛУГУ -->
+    <section class="choose_service">
+        <picture>
+            <source media="(max-width: 767px)" srcset="./images/choose_service-mob.webp">
+            <source media="(min-width: 768px)" srcset="./images/choose_service-desk.webp">
+            <img src="./images/choose_service-mob.webp" class="banner_image" width="360" height="549" alt="banner image">
+        </picture>
+        <div class="centre">
+            <span class="section_title">Бажаєте тортик з індивідуальним дизайном?</span>
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="services_icon"><svg class="icon"><use xlink:href="./images/sprite.svg#cake"></use></svg></div>
+                        <span>Створіть свій десерт</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
     <div class="shadow hidden">click to close</div>
-    <!--    <div class="styleguide hidden" style="display: none">-->
-    <div class="styleguide">
+    <div class="styleguide hidden" style="display: none">
+<!--    <div class="styleguide">-->
         <a href="#" class="btn">Нажми на мене</a>
         <br>
         <a href="#" class="btn dark_btn">Нажми на мене</a>
