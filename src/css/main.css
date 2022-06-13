@@ -3409,6 +3409,7 @@ s .products_slider-inner figure {
 .year_article h1 {
   font-size: 80px;
   line-height: 1.4;
+  font-weight: 300;
   display: block;
   margin-bottom: 42px;
   padding-right: 100px;
@@ -3426,7 +3427,7 @@ s .products_slider-inner figure {
 }
 
 .year_article .year_header-text {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .article_photo-top-wrap {
@@ -3458,6 +3459,63 @@ s .products_slider-inner figure {
 
 .year_bottom-text {
   margin-bottom: 42px;
+}
+
+.photo_two-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.photo_two-img Img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gallery_grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery_grid Li {
+  width: 100%;
+  height: 360px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.gallery_grid A {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.gallery_grid Img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery_popup {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 20px);
+  max-width: 900px;
+  background-color: var(--site-bg-color);
+  padding: 40px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.8);
+  z-index: 12;
+}
+
+.gallery_popup-inner {
+  width: 100%;
+  height: auto;
+}
+.gallery_popup-inner Img {
+  width: 100%;
+  height: auto;
 }
 
 .progress {

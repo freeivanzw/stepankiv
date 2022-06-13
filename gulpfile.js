@@ -66,20 +66,19 @@ gulp.task('prebuild', async function() {
 
 gulp.task('serve', function () {
 
-
-
-
-    gulp.watch("*.html").on("change", reload);
-	gulp.watch('src/css/sass/**/*.scss', gulp.parallel('sass-dev')).on("change", reload);
-	gulp.watch('src/*.html').on("change", reload) ;
-	gulp.watch('src/js/**/*.js').on("change", reload);
-
 	browserSync.init({
 		server: {
 			baseDir: "src"
 		},
 		notify: false
 	});
+
+    gulp.watch("*.html").on("change", reload);
+	gulp.watch('src/css/sass/**/*.scss', gulp.parallel('sass-dev')).on("change", reload);
+	gulp.watch('src/*.html').on("change", reload) ;
+	gulp.watch('src/js/**/*.js').on("change", reload);
+
+
 });
 
 gulp.task('build', gulp.series('prebuild', 'clean',  'sass', 'scripts', 'plugins', 'img', 'favicon'));
