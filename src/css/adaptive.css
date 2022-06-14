@@ -680,6 +680,85 @@ h1 {
   .gallery_grid Li:nth-child(3n+2), .gallery_grid Li:nth-child(3n+3) {
     margin-left: 20px;
   }
+
+  .stores_list {
+    padding-top: 50px;
+  }
+
+  .stores_list .section_title {
+    margin-bottom: 60px;
+  }
+
+  .toggle_city {
+    display: grid;
+    grid-template-columns: calc(46% - 105px) calc(54% - 105px) 210px;
+    margin-bottom: 82px;
+    padding: 25px 42px 25px 30px;
+  }
+  .toggle_city Span {
+    margin: 0;
+    padding-right: 18px;
+  }
+  .toggle_city .toggle_inner {
+    margin: 0;
+    padding-right: 18px;
+  }
+  .toggle_city .toggle_inner::before, .toggle_city .toggle_inner::after {
+    right: 43px;
+  }
+
+  .stores_grid {
+    margin-bottom: 68px;
+  }
+
+  .stores_grid Ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .stores_grid Ul Li {
+    width: calc(50% - 15px);
+  }
+  .stores_grid Ul Li B {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .partner_text {
+    font-size: 30px;
+    margin-bottom: 52px;
+  }
+
+  .partner_grid {
+    margin-bottom: 115px;
+  }
+
+  .partner_grid Li {
+    width: 20%;
+  }
+
+  .steps {
+    margin-top: 150px;
+    padding: 52px 0 175px 0;
+  }
+
+  .steps .section_title {
+    margin-bottom: 40px;
+  }
+
+  .steps_text {
+    margin-bottom: 115px;
+  }
+
+  .steps_list Li {
+    font-size: 20px;
+    width: 25%;
+    padding-bottom: 0;
+  }
+
+  .steps_list Li B {
+    margin-bottom: 54px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .site_footer {
@@ -1008,6 +1087,17 @@ h1 {
   .service_grid .centre {
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
+  }
+
+  .service_grid .centre ::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--border-color);
+    position: absolute;
+    bottom: -80px;
+    left: 0;
   }
 
   .service_item {
@@ -1018,28 +1108,13 @@ h1 {
   .service_item + .service_item {
     margin-top: 0;
   }
-  .service_item > * {
-    z-index: 1;
-  }
 
   .service_photo {
     display: block;
-    width: 90px;
-    height: 90px;
-    margin: 0 auto;
-    position: relative;
   }
-  .service_photo::before {
-    content: "";
-    width: 205px;
-    height: 205px;
-    background-color: #fff;
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    border-radius: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
+
+  .service_grid .section_title {
+    margin-bottom: 123px;
   }
 
   .service_text {

@@ -1,0 +1,83 @@
+.steps {
+    padding: 58px 0 45px 0;
+    background-color: #f4f2ec;
+    position: relative;
+}
+
+.steps .bg-top {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+
+    Img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.steps .centre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps .section_title {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.steps_text {
+    font-size: 18px;
+    line-height: 1.8;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.steps_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    Li {
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.4;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 30px;
+        width: 50%;
+        z-index: 1;
+
+        B {
+            font-family: "Playfair-Display", sans-serif;
+            font-size: 60px;
+            color: var(--text-main-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            width: 114px;
+            height: 90px;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 114px;
+                height: 90px;
+                background-image: url('../images/steps-item-bg.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: 16px;
+                left: 0;
+                z-index: -1;
+            }
+        }
+    }
+}

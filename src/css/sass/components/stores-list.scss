@@ -1,0 +1,206 @@
+/*
+СПИСОК МАГАЗИНІВ
+ */
+.stores_list {
+    padding-top: 40px;
+}
+
+.stores_list .section_title {
+    text-align: center;
+    display: block;
+    margin-bottom: 42px;
+    width: 100%;
+}
+
+.toggle_city {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 20px 30px 20px;
+    max-width: 1015px;
+    margin: 0 auto 32px auto;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--site-bg-color);
+
+    Span {
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--text-light);
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .icon {
+        fill: var(--text-color);
+        margin-right: 10px;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.toggle_city .toggle_inner {
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: "";
+        width: 1px;
+        height: 5px;
+        background-color: var(--main-color);
+        position: absolute;
+        top: 50%;
+        right: 25px;
+        transform-origin: bottom;
+    }
+
+    &::before {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    &::after {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    Input {
+        width: 100%;
+        padding-right: 42px;
+        border: none;
+        background-color: #f6f4ef;
+    }
+}
+
+.toggle_city button[type=submit] {
+    font-family: "Playfair-Display", sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: var(--btn-text-dark);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 42px;
+    border-radius: 21px;
+    padding: 0 21px;
+    background-color: var(--btn-bg-dark);
+    border: 2px solid var(--btn-border-dark);
+    transition: 0.3s;
+
+    &:hover {
+        color: var(--btn-text-dark-hover);
+        background-color: var(--btn-bg-dark-hover);
+        border: var(--btn-border-dark-hover);
+    }
+}
+
+.stores_grid {
+    width: 100%;
+    font-style: normal;
+    max-width: 1280px;
+    margin: 0 auto 58px auto;
+
+    Ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    Li {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 45px 35px 45px;
+        margin-bottom: 22px;
+        border-radius: 5px;
+        background-color: #f6f4ef;
+        position: relative;
+
+        &:before {
+            content: "";
+            width: 230px;
+            height: 49px;
+            background-image: url("../images/stores-bg.png");
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        B {
+            font-family: "Playfair-Display", sans-serif;
+            font-size: 24px;
+            line-height: 1.4;
+            font-weight: 400;
+            color: var(--text-main-color);
+            margin-bottom: 10px;
+        }
+
+        Span {
+            font-family: "Proxima-Nova", sans-serif;
+            font-size: 18px;
+            line-height: 1.4;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.store_show {
+    font-family: "Proxima-Nova", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--text-main-color);
+    padding: 0 40px 6px 0 ;
+    max-width: max-content;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 135px;
+        height: 2px;
+        background-color: var(--text-main-color);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: 0.3s;
+    }
+
+    &:hover::before {
+        width: 0;
+    }
+}
+
+.partner_text {
+    font-size: 16px;
+    line-height: 1.4;
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.partner_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 90px;
+
+    Li {
+        width: 33.33%;
+        padding: 0 15px 10px 15px;
+    }
+
+    Img {
+        width: 100%;
+        max-width: 180px;
+        margin: 0 auto;
+    }
+}
+
+.stores_map {
+    width: 100%;
+    height: 620px;
+}
