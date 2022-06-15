@@ -77,6 +77,10 @@ $(function () {
     $('.shadow').on('click', function () {
         $(this).addClass('hidden');
     })
+
+    $('.vacancy_list-top').on('click', function () {
+        $(this).parent().toggleClass('opened');
+    })
     
     $('.main_banner').each(function(index, element) {
         if ($(element).find('.banner_slide').length > 1) {
@@ -183,5 +187,18 @@ $(function () {
             }
         ]
     })
-   
+
+    $('.constructor_tabs a').on('click', function (e) {
+           e.preventDefault();
+
+           $('.constructor_tabs li').removeClass('active');
+           $('.tabs-item').removeClass('active');
+
+           $(this).parent().addClass('active');
+           $('#' +  $(this).attr('data-tab')).addClass('active');
+
+    })
+
+    $('.constructor_tabs li').first().children('a').trigger('click');
+
 })

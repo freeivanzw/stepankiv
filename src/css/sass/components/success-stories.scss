@@ -1,0 +1,69 @@
+.success_stories {
+    padding-bottom: 115px;
+}
+
+.success_stories .section_title {
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.success_text {
+    font-family: "Proxima-Nova", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    display: block;
+    max-width: 875px;
+    margin: 0 auto 40px auto;
+}
+
+.success_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+}
+
+.success_grid Li {
+    width: 100%;
+}
+
+.success_grid Figure {
+    position: relative;
+}
+
+.success_photo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.success_photo Img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: brightness(0.7);
+}
+
+.success_grid Figcaption {
+    color: var(--text-contrast);
+    display: flex;
+    flex-direction: column;
+    padding: 0 22px 25px 22px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.success_grid Figcaption Span {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 3px;
+}
+
+.success_grid Figcaption B {
+    font-size: 24px;
+    line-height: 1.4;
+}

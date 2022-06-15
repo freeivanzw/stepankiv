@@ -149,3 +149,20 @@
     max-width: max-content;
     margin: 0 auto;
 }
+
+.catalog_grid.catalog_special {
+    position: relative;
+    padding: 0 0 125px 0;
+}
+
+.catalog_special-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.catalog_special-bg Img {
+    width: 100%;
+}

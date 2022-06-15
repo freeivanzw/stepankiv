@@ -58,99 +58,109 @@
     <nav class="top_toggle">
         <div class="centre">
             <ul class="articles_list">
-                <li class="active"><a href="#">Кар’єра</a></li>
-                <li><a href="#">Вакансії</a></li>
+                <li><a href="#">Кар’єра</a></li>
+                <li class="active"><a href="#">Вакансії</a></li>
                 <li><a href="#">Історії успіху</a></li>
             </ul>
         </div>
     </nav>
-    <!-- СЕРВІСИ СІТКОЮ -->
-    <section class="service_grid template_2">
-        <span class="section_title">Кар’єра</span>
+    <section class="vacancy">
         <div class="centre">
-            <div class="service_item">
-                <div class="service_photo"><img src="./images/career-1.svg" width="140" height="140" alt="service photo"></div>
-                <span class="service_link sub_title">Конкурентна заробітна плата</span>
-                <span class="service_text">Різноманітний та багатий досвід подальшого розвитку різних форм діяльності потребують визначення та уточнення</span>
-            </div>
-            <div class="service_item">
-                <div class="service_photo"><img src="./images/career-2.svg" width="140" height="140" alt="service photo"></div>
-                <span class="service_link sub_title">Офіційне працевлаштування</span>
-                <span class="service_text">Різноманітний та багатий досвід подальшого розвитку різних форм діяльності потребують визначення та уточнення</span>
-            </div>
-            <div class="service_item">
-                <div class="service_photo"><img src="./images/career-3.svg" width="140" height="140" alt="service photo"></div>
-                <span class="service_link sub_title">Можливість кар’єрного росту</span>
-                <span class="service_text">Різноманітний та багатий досвід подальшого розвитку різних форм діяльності потребують визначення та уточнення</span>
-            </div>
-        </div>
-    </section>
-    <!--СТАТТЯ 2-->
-    <section class="articles">
-        <div class="centre">
-            <article class="article_two">
-                <header>
-                    <h2>Так само реалізація намічених планових завдань </h2>
-                    <p>Повсякденна практика показує, що постійне інформаційно-пропагандистське забезпечення нашої діяльності значною мірою зумовлює створення позицій, які займають учасники щодо поставлених завдань. </p>
-                </header>
-                <div class="article_row right_image">
-                    <div class="article_text">
-                        <p>Таким чином, початок повсякденної роботи з формування позиції вимагають від нас аналізу форм розвитку. З іншого боку, консультація з широким активом забезпечує широкому колу (фахівців) участь у формуванні нових пропозицій.</p>
-                        <b>Різноманітний та багатий досвід подальшого розвитку різних форм діяльності потребують визначення та уточнення подальших напрямків розвитку.</b>
+            <span class="section_title">Відкриті вакансії в Фірмовій мережі компанії</span>
+            <form class="vacancy_filter">
+                <label class="vacancy_inner">
+                    <span class="vacancy_filter-name">Місто</span>
+                    <div class="vacancy_input-wrap">
+                        <input type="text">
                     </div>
-                    <div class="articles_picture">
-                        <img src="./images/article-1.webp" class="articles_picture" alt="article images">
+                </label>
+                <div class="vacancy_inner">
+                    <span class="vacancy_filter-name">Посада</span>
+                    <div class="dropdown order_delivery">
+                        <div class="overflow">
+                            <span>Спосіб доставки</span>
+                            <button type="button" class="drop_arrow">open</button>
+                        </div>
+                        <ul style="display: none;">
+                            <li><a href="#">Нова Пошта</a></li>
+                            <li><a href="#">Кур’єр Нова Пошта</a></li>
+                            <li><a href="#">Кур’єр Міст Експрес</a></li>
+                            <li><a href="#">Самовивіз</a></li>
+                            <li><a href="#">Інше</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="article_row left_image">
-                    <div class="article_text">
-                        <p>Таким чином, початок повсякденної роботи з формування позиції вимагають від нас аналізу форм розвитку. З іншого боку, консультація з широким активом забезпечує широкому колу (фахівців) участь у формуванні нових пропозицій.</p>
-                        <b>Різноманітний та багатий досвід подальшого розвитку різних форм діяльності потребують визначення та уточнення подальших напрямків розвитку.</b>
-                    </div>
-                    <div class="articles_picture">
-                        <img src="./images/article-2.webp" class="articles_picture" alt="article images">
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
-    <!--КРОКИ-->
-    <section class="steps">
-        <picture class="bg-top">
-            <source media="(max-width: 799px)" srcset="./images/steps-mob.png">
-            <source media="(min-width: 800px)" srcset="./images/steps-deck.png">
-            <img src="./images/steps-mob.png" alt="Chris standing up holding his daughter Elva">
-        </picture>
-        <div class="centre">
-            <span class="section_title">Як до нас приєднатися</span>
-            <span class="steps_text">Так само реалізація намічених планових завдань тягне у себе процес упровадження та модернізації відповідних умов активізації. </span>
-            <ul class="steps_list">
-                <li><b>1</b><span>Подача резюме</span></li>
-                <li><b>2</b><span>Співбесіда</span></li>
-                <li><b>3</b><span>Знайомство з посадою</span></li>
-                <li><b>4</b><span>Пропозиція роботи</span></li>
-            </ul>
-        </div>
-    </section>
-    <!-- ВИБЕРІТЬ ПОСЛУГУ -->
-    <section class="choose_service">
-        <picture>
-            <source media="(max-width: 767px)" srcset="./images/users_list-mob.png">
-            <source media="(min-width: 768px)" srcset="./images/users_list-desk.png">
-            <img src="./images/users_list-mob.png" class="banner_image" width="360" height="549" alt="banner image">
-        </picture>
-        <div class="centre">
-            <span class="section_title">Приєднуйтеся до нашої дружньої команди</span>
-            <ul>
+                <button type="submit">Знайти вакансії</button>
+            </form>
+            <ul class="vacancy_list">
                 <li>
-                    <a href="#">
-                        <div class="services_icon"><svg class="icon"><use xlink:href="./images/sprite.svg#list"></use></svg></div>
-                        <span>Переглянути вакансії</span>
-                    </a>
+                    <div class="vacancy_list-top">
+                        <b>Керуючий магазином</b>
+                        <span><svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg> Львів</span>
+                    </div>
+                    <div class="vacancy_list-bottom">
+                       <span>Lorem ipsum dolor sit amet. <br>Lorem ipsum. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="vacancy_list-top">
+                        <b>Заступник керуючого магазином</b>
+                        <span><svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg> Львів</span>
+                    </div>
+                    <div class="vacancy_list-bottom">
+                        <span>Lorem ipsum dolor sit amet. <br>Lorem ipsum. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="vacancy_list-top">
+                        <b>Старший продавець</b>
+                        <span><svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg> Львів</span>
+                    </div>
+                    <div class="vacancy_list-bottom">
+                        <span>Lorem ipsum dolor sit amet. <br>Lorem ipsum. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="vacancy_list-top">
+                        <b>Продавець консультант</b>
+                        <span><svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg> Львів</span>
+                    </div>
+                    <div class="vacancy_list-bottom">
+                        <span>Lorem ipsum dolor sit amet. <br>Lorem ipsum. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                    </div>
                 </li>
             </ul>
         </div>
     </section>
+    <!-- СЕРВІСИ СІТКОЮ -->
+    <section class="service_grid">
+        <picture class="bg-top">
+            <source media="(max-width: 799px)" srcset="./images/service_grid-after-mob.png">
+            <source media="(min-width: 800px)" srcset="./images/service_grid-after-deck.png">
+            <img src="./images/service_grid-after-mob.png" alt="Chris standing up holding his daughter Elva">
+        </picture>
+        <div class="centre">
+            <div class="service_item">
+                <a href="#" class="service_photo"><img src="./images/products.svg" width="90" height="90" alt="service photo"></a>
+                <a href="#" class="service_link sub_title">Продукція</a>
+                <span class="service_text">Продукція наших магазинів налічує близько 300 найрізноманітніших солодощів</span>
+                <a href="#" class="btn"><svg class="icon"><use xlink:href="./images/sprite.svg#sopping_bag"></use></svg>Переглянути</a>
+            </div>
+            <div class="service_item">
+                <a href="#" class="service_photo"><img src="./images/shops.svg" width="90" height="90" alt="service photo"></a>
+                <a href="#" class="service_link sub_title">Наші магазини</a>
+                <span class="service_text">Завітайте до наших магазинів та поласуйте нашою продукцією</span>
+                <a href="#" class="btn"><svg class="icon"><use xlink:href="./images/sprite.svg#location"></use></svg>Адреси магазинів</a>
+            </div>
+            <div class="service_item">
+                <a href="#" class="service_photo"><img src="./images/questions.svg" width="90" height="90" alt="service photo"></a>
+                <a href="#" class="service_link sub_title">Виникли питання?</a>
+                <span class="service_text">Якщо у Вас з’явилися запитання або побажання, ми будемо раді на них відповісти</span>
+                <a href="#" class="btn"><svg class="icon"><use xlink:href="./images/sprite.svg#paper_mail"></use></svg>Зв’яжіться з нами</a>
+            </div>
+        </div>
+    </section>
+    <!--ВАКАНСІЇ-->
     <div class="shadow hidden">click to close</div>
     <div class="styleguide hidden" style="display: none">
 <!--        <div class="styleguide">-->
