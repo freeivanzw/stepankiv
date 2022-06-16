@@ -81,7 +81,20 @@ $(function () {
     $('.vacancy_list-top').on('click', function () {
         $(this).parent().toggleClass('opened');
     })
-    
+
+    $('.constructor_tabs a').on('click', function (e) {
+        e.preventDefault();
+
+        $('.constructor_tabs a').removeClass('active');
+        $('.tabs-item').removeClass('active');
+
+        $(this).addClass('active');
+        $('#' +  $(this).attr('data-tab')).addClass('active');
+
+    })
+
+    $('.constructor_tabs li').first().children('a').trigger('click');
+
     $('.main_banner').each(function(index, element) {
         if ($(element).find('.banner_slide').length > 1) {
             $(element).slick({
@@ -188,17 +201,33 @@ $(function () {
         ]
     })
 
-    $('.constructor_tabs a').on('click', function (e) {
-           e.preventDefault();
-
-           $('.constructor_tabs li').removeClass('active');
-           $('.tabs-item').removeClass('active');
-
-           $(this).parent().addClass('active');
-           $('#' +  $(this).attr('data-tab')).addClass('active');
-
-    })
-
-    $('.constructor_tabs li').first().children('a').trigger('click');
-
+    $('.constructor_slider').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        slidesToShow: 2,
+        variableWidth: true,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 479,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 1279,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: true,
+                }
+            }
+        ]
+    });
 })

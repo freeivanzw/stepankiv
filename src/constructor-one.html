@@ -74,27 +74,147 @@
                     <ul class="constructor_tabs">
                         <li><a href="#" data-tab="tab-1">Оберіть основу</a></li>
                         <li><a href="#" data-tab="tab-2">Оберіть начинку</a></li>
-                        <li class="error"><a href="#" data-tab="tab-3">Оберіть декор</a></li>
+                        <li><a href="#" class="error" data-tab="tab-3">Оберіть декор</a></li>
                         <li><a href="#" data-tab="tab-4">Напис на торті</a></li>
                     </ul>
-                    <div class="tabs-items">
+                    <div class="tabs_box">
                         <div class="tabs-item" id="tab-1">
-                            <strong>Текст вкладки №1</strong>
+                            <div class="constructor_slider">
+                                <div class="constructor_item">
+                                    <input type="radio" name="rb" id="rb1" checked>
+                                    <label for="rb1">
+                                        <img src="./images/constructor-1.jpg" alt="constructor photo">
+                                        <span>Шоколадний бісквіт</span>
+                                    </label>
+                                </div>
+                                <div class="constructor_item">
+                                    <input type="radio" name="rb" id="rb2">
+                                    <label for="rb2">
+                                        <img src="./images/constructor-1.jpg" alt="constructor photo">
+                                        <span>Шоколадний бісквіт</span>
+                                    </label>
+                                </div>
+                                <div class="constructor_item">
+                                    <input type="radio" name="rb" id="rb3">
+                                    <label for="rb3">
+                                        <img src="./images/constructor-1.jpg" alt="constructor photo">
+                                        <span>Шоколадний бісквіт</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="dropdown_wrap">
+                                <div class="dropdown_item">
+                                    <svg class="icon"><use xlink:href="./images/sprite.svg#weight"></use></svg>
+                                    <span class="dropdown_item-title">Вага</span>
+                                    <div class="dropdown order_delivery">
+                                        <div class="overflow">
+                                            <span>1.2 кг</span>
+                                            <button type="button" class="drop_arrow">open</button>
+                                        </div>
+                                        <ul style="display: none;">
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">6</a></li>
+                                            <li><a href="#">10</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dropdown_item">
+                                    <svg class="icon"><use xlink:href="./images/sprite.svg#staps"></use></svg>
+                                    <span class="dropdown_item-title">Кількість ярусів</span>
+                                    <div class="dropdown order_delivery">
+                                        <div class="overflow">
+                                            <span>1</span>
+                                            <button type="button" class="drop_arrow">open</button>
+                                        </div>
+                                        <ul style="display: none;">
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">6</a></li>
+                                            <li><a href="#">10</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tabs-item" id="tab-2">
                             <strong>Текст вкладки №2</strong>
                         </div>
                         <div class="tabs-item" id="tab-3">
-                            <strong>Текст вкладки №3</strong>
+                            <span class="tabs_item-title">В нашому арсеналі більш ніж 500 різновидів декору. Обирайте будь-який на свій смак!</span>
+                            <a href="#" class="btn dark_btn tab_btn choose_decor">Обрати декор</a>
+                            <div class="tab_checkbox">
+                                <input type="checkbox" id="cb1">
+                                <label for="cb1">
+                                    <b>Хочу особливий декор</b>
+                                    <span>Ви можете завантажити власне фото декору або додати посилання на декор</span>
+                                </label>
+                            </div>
+                            <div class="upload_box">
+                                <div class="upload_photo">
+                                    <span class="upload_title">Завантажте фото декору</span>
+                                    <label>
+                                        <input type="file">
+                                        <span class="btn tab_btn">Завантажити фото</span>
+                                    </label>
+                                </div>
+                                <div class="upload_inner">
+                                    <span class="upload_title">Додайте посилання на зразок</span>
+                                    <input type="text">
+                                </div>
+                                <div class="upload_inner upload_textarea">
+                                    <span class="upload_title">Побажання до замовлення</span>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
                         </div>
                         <div class="tabs-item" id="tab-4">
                             <strong>Текст вкладки №4</strong>
                         </div>
                     </div>
-                    <button type="submit">Підтверидити</button>
+                    <button type="submit" class="btn constructor_form-deck">Підтверидити</button>
                 </form>
                 <div class="right_col">
-
+                    <span class="sub_title">Ви вибрали</span>
+                    <div class="constructor_grid">
+                        <div class="constructor_grid-item">
+                            <strong>Основа</strong>
+                            <span>Шоколадний бісквіт <br>2 яруси</span>
+                        </div>
+                        <div class="constructor_grid-item">
+                            <strong>начинка</strong>
+                            <span>Шоколадно-вершковий крем <br>Шоколадне безе <br>Горіхи <br>Родзинки</span>
+                        </div>
+                        <div class="constructor_grid-item">
+                            <strong>Декор</strong>
+                            <span>Крем <br>Шоколад</span>
+                        </div>
+                        <div class="constructor_grid-item">
+                            <strong>Напис</strong>
+                            <span>З Днем Народження!!!</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="constructor_price">
+                        <div class="left_col">
+                            <i>Ціна за 1 шт.</i>
+                            <b>850 грн</b>
+                            <span>Вага: 1,2 кг.</span>
+                        </div>
+                        <div class="center_col">
+                            <a href="#" class="minus">+</a>
+                            <input type="text" value="1">
+                            <a href="#" class="plus">-</a>
+                        </div>
+                        <div class="right_col">
+                            <i>Загальна ціна</i>
+                            <b>1900 грн</b>
+                            <span>Вага: 2,4 кг.</span>
+                        </div>
+                    </div>
+                    <button class="btn dark_btn constructor_form-mob">Підтверидити</button>
                 </div>
             </div>
         </div>
