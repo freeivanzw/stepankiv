@@ -1,3 +1,6 @@
+/*
+КОНСТРУКТОР
+ */
 .constructor .centre {
     margin-bottom: 50px;
 }
@@ -140,6 +143,10 @@
     margin-bottom: 14px;
 }
 
+.constructor_item input[type="radio"].error + label img {
+    border-color: var(--error-color);
+}
+
 .constructor_item input[type="radio"]:not(:checked) + label:after {
     opacity: 0;
 }
@@ -178,6 +185,10 @@
     width: 110px;
     height: 45px;
     margin-bottom: 0;
+}
+
+.dropdown_item .dropdown.error {
+    border-color: var(--error-color);
 }
 
 .dropdown_item .dropdown .overflow {
@@ -339,6 +350,17 @@
     background-color: #cabfbb;
     color: var(--text-main-color);
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload_photo .tab_btn:hover {
+    background-color: transparent;
+    border-color: var(--main-color);
+}
+
+.upload_photo .tab_btn.error {
+    border-color: var(--error-color);
+    background-color: transparent;
 }
 
 .constructor_inner .choose_decor {
@@ -454,10 +476,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: 0.3s;
 }
 
 .constructor_price .center_col A.plus::after {
     transform: translate(-50%, -50%) rotate(90deg);
+}
+
+
+.constructor_price .center_col A:hover::before,
+.constructor_price .center_col A.plus:hover::after {
+    background-color: var(--main-color);
 }
 
 .constructor_price .center_col Input {
@@ -471,6 +500,7 @@
 .constructor .btn.constructor_form-mob {
     font-family: "Proxima-Nova", sans-serif;
     margin: 20px 0 0 auto;
+    cursor: pointer;
 }
 
 .constructor-bg {

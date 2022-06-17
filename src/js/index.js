@@ -226,6 +226,7 @@ $(function () {
                 settings: {
                     slidesToShow: 3,
                     arrows: true,
+                    variableWidth: false,
                 }
             }
         ]

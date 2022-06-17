@@ -75,7 +75,7 @@
                         <li><a href="#" data-tab="tab-1">Оберіть основу</a></li>
                         <li><a href="#" data-tab="tab-2">Оберіть начинку</a></li>
                         <li><a href="#" class="error" data-tab="tab-3">Оберіть декор</a></li>
-                        <li><a href="#" data-tab="tab-4">Напис на торті</a></li>
+                        <li><a href="#" data-tab="tab-4">Зразок торту і опис</a></li>
                     </ul>
                     <div class="tabs_box">
                         <div class="tabs-item" id="tab-1">
@@ -88,7 +88,7 @@
                                     </label>
                                 </div>
                                 <div class="constructor_item">
-                                    <input type="radio" name="rb" id="rb2">
+                                    <input type="radio" name="rb" id="rb2" class="error">
                                     <label for="rb2">
                                         <img src="./images/constructor-1.jpg" alt="constructor photo">
                                         <span>Шоколадний бісквіт</span>
@@ -101,12 +101,33 @@
                                         <span>Шоколадний бісквіт</span>
                                     </label>
                                 </div>
+                                <div class="constructor_item">
+                                    <input type="radio" name="rb" id="rb4">
+                                    <label for="rb4">
+                                        <img src="./images/constructor-1.jpg" alt="constructor photo">
+                                        <span>Шоколадний бісквіт</span>
+                                    </label>
+                                </div>
+                                <div class="constructor_item">
+                                    <input type="radio" name="rb" id="rb5">
+                                    <label for="rb5">
+                                        <img src="./images/constructor-1.jpg" alt="constructor photo">
+                                        <span>Шоколадний бісквіт</span>
+                                    </label>
+                                </div>
+                                <div class="constructor_item">
+                                    <input type="radio" name="rb" id="rb6">
+                                    <label for="rb6">
+                                        <img src="./images/constructor-1.jpg" alt="constructor photo">
+                                        <span>Шоколадний бісквіт</span>
+                                    </label>
+                                </div>
                             </div>
                             <div class="dropdown_wrap">
                                 <div class="dropdown_item">
                                     <svg class="icon"><use xlink:href="./images/sprite.svg#weight"></use></svg>
                                     <span class="dropdown_item-title">Вага</span>
-                                    <div class="dropdown order_delivery">
+                                    <div class="dropdown order_delivery error">
                                         <div class="overflow">
                                             <span>1.2 кг</span>
                                             <button type="button" class="drop_arrow">open</button>
@@ -157,7 +178,7 @@
                                     <span class="upload_title">Завантажте фото декору</span>
                                     <label>
                                         <input type="file">
-                                        <span class="btn tab_btn">Завантажити фото</span>
+                                        <span class="btn tab_btn error">Завантажити фото</span>
                                     </label>
                                 </div>
                                 <div class="upload_inner">
@@ -171,7 +192,23 @@
                             </div>
                         </div>
                         <div class="tabs-item" id="tab-4">
-                            <strong>Текст вкладки №4</strong>
+                            <div class="upload_box">
+                                <div class="upload_photo">
+                                    <span class="upload_title">Завантажте фото зразка</span>
+                                    <label>
+                                        <input type="file">
+                                        <span class="btn tab_btn error">Завантажити фото</span>
+                                    </label>
+                                </div>
+                                <div class="upload_inner">
+                                    <span class="upload_title">Додайте посилання на зразок</span>
+                                    <input type="text">
+                                </div>
+                                <div class="upload_inner upload_textarea">
+                                    <span class="upload_title">Опис</span>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <button type="submit" class="btn constructor_form-deck">Підтверидити</button>
@@ -253,8 +290,8 @@
         </div>
     </section>
     <div class="shadow hidden">click to close</div>
-<!--    <div class="styleguide" style="display: none">-->
-         <div class="styleguide">
+    <div class="styleguide" style="display: none">
+<!--         <div class="styleguide">-->
         <a href="#" class="btn">Нажми на мене</a>
         <br>
         <a href="#" class="btn dark_btn">Нажми на мене</a>

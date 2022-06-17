@@ -3287,6 +3287,9 @@ s .products_slider-inner figure {
   margin-bottom: 12px;
 }
 
+/*
+СТАТТЯ 2
+ */
 .articles {
   padding: 55px 0 60px 0;
 }
@@ -3580,6 +3583,9 @@ s .products_slider-inner figure {
   height: auto;
 }
 
+/*
+ДОСЯГНЕННЯ
+ */
 .progress {
   padding: 58px 0 168px 0;
   position: relative;
@@ -3841,6 +3847,9 @@ s .products_slider-inner figure {
   height: 620px;
 }
 
+/*
+КРОКИ
+ */
 .steps {
   padding: 58px 0 45px 0;
   background-color: #f4f2ec;
@@ -3921,6 +3930,9 @@ s .products_slider-inner figure {
   z-index: -1;
 }
 
+/*
+ВАКАНСІЇ
+ */
 .vacancy .centre {
   max-width: 1025px;
 }
@@ -4106,6 +4118,9 @@ s .products_slider-inner figure {
   display: block;
 }
 
+/*
+ІСТОРІЇ УСПІХУ
+ */
 .success_stories {
   padding-bottom: 115px;
 }
@@ -4176,6 +4191,9 @@ s .products_slider-inner figure {
   line-height: 1.4;
 }
 
+/*
+ДЕТАЛЬНЕ ІСТОРІЇ
+ */
 .story_page-banner {
   display: block;
   width: 100%;
@@ -4288,6 +4306,9 @@ s .products_slider-inner figure {
   line-height: 1.5;
 }
 
+/*
+КОНСТРУКТОР
+ */
 .constructor .centre {
   margin-bottom: 50px;
 }
@@ -4430,6 +4451,10 @@ s .products_slider-inner figure {
   margin-bottom: 14px;
 }
 
+.constructor_item input[type=radio].error + label img {
+  border-color: var(--error-color);
+}
+
 .constructor_item input[type=radio]:not(:checked) + label:after {
   opacity: 0;
 }
@@ -4468,6 +4493,10 @@ s .products_slider-inner figure {
   width: 110px;
   height: 45px;
   margin-bottom: 0;
+}
+
+.dropdown_item .dropdown.error {
+  border-color: var(--error-color);
 }
 
 .dropdown_item .dropdown .overflow {
@@ -4629,6 +4658,17 @@ s .products_slider-inner figure {
   background-color: #cabfbb;
   color: var(--text-main-color);
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload_photo .tab_btn:hover {
+  background-color: transparent;
+  border-color: var(--main-color);
+}
+
+.upload_photo .tab_btn.error {
+  border-color: var(--error-color);
+  background-color: transparent;
 }
 
 .constructor_inner .choose_decor {
@@ -4744,10 +4784,16 @@ s .products_slider-inner figure {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: 0.3s;
 }
 
 .constructor_price .center_col A.plus::after {
   transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.constructor_price .center_col A:hover::before,
+.constructor_price .center_col A.plus:hover::after {
+  background-color: var(--main-color);
 }
 
 .constructor_price .center_col Input {
@@ -4761,6 +4807,7 @@ s .products_slider-inner figure {
 .constructor .btn.constructor_form-mob {
   font-family: "Proxima-Nova", sans-serif;
   margin: 20px 0 0 auto;
+  cursor: pointer;
 }
 
 .constructor-bg {

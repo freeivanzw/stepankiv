@@ -1188,6 +1188,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .articles {
+        padding-bottom: 150px;
+    }
+
     .articles_list {
         margin-bottom: 55px;
     }
@@ -1723,6 +1727,12 @@
 
     .tab_checkbox {
         margin-bottom: 50px;
+    }
+
+    .constructor_item input[type=radio]:checked + label img,
+    .constructor_item input[type=radio]:not(:checked) + label img {
+        width: 100%;
+        height: auto;
     }
 }
 
