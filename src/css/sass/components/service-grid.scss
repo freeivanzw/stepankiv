@@ -93,11 +93,18 @@
     margin-bottom: 20px;
 }
 
-.service_text {
+.service_grid.template_2 .service_link {
+    font-size: 22px;
+}
 
+.service_text {
     text-align: center;
     line-height: 1.8;
     margin-bottom: 30px;
+}
+
+.service_grid.template_2 .service_text {
+    font-size: 16px;
 }
 
 .service_item .btn {
