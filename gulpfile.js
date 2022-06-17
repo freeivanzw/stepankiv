@@ -6,6 +6,7 @@ const cssnano      = require('gulp-cssnano');
 const rename       = require('gulp-rename'); 
 const del          = require('del'); 
 const webp       = require('gulp-webp');
+const miniCss    = require('gulp-clean-css');
 
  
 gulp.task('sass', function() { 
@@ -64,6 +65,16 @@ gulp.task('prebuild', async function() {
  
 });
 
+gulp.task('minCss', function () {
+	return gulp.src(['src/css/main.css', 'src/css/adaptive.css'])
+		.pipe(miniCss())
+		.pipe(rename({
+			suffix: "-min",
+			extname: ".css"
+		}))
+		.pipe(gulp.dest('src/css'));
+})
+
 gulp.task('serve', function () {
 
 	browserSync.init({
@@ -74,11 +85,9 @@ gulp.task('serve', function () {
 	});
 
     gulp.watch("*.html").on("change", reload);
-	gulp.watch('src/css/sass/**/*.scss', gulp.parallel('sass-dev')).on("change", reload);
+	gulp.watch('src/css/sass/**/*.scss', gulp.parallel(['sass-dev', 'minCss'])).on("change", reload);
 	gulp.watch('src/*.html').on("change", reload) ;
 	gulp.watch('src/js/**/*.js').on("change", reload);
-
-
 });
 
 gulp.task('build', gulp.series('prebuild', 'clean',  'sass', 'scripts', 'plugins', 'img', 'favicon'));

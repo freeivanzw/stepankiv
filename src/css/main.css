@@ -2749,7 +2749,7 @@ s .products_slider-inner figure {
 
 .cart_item-price {
   font-family: "Proxima-Nova", sans-serif;
-  font-size: 24px;
+  font-size: 15px;
   line-height: 1.4;
 }
 
@@ -2877,14 +2877,11 @@ s .products_slider-inner figure {
   font-size: 14px;
   line-height: 1.2;
   color: var(--error-color);
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
   margin-top: 50px;
 }
 
 .error_popup .icon {
-  margin-right: 8px;
+  margin: 0 8px -2px 0;
   width: 16px;
   height: 16px;
   fill: transparent;
